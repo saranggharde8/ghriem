@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<script>
+			
+			function show()
+			{
+				
+				var no=document.getElementById('no').value;
+				//alert(no);
+				var data="<table border=1>";
+				for(var i=1; i<=10; i++)
+				{
+					var res=no * i;
+					data +="<tr><th>"+ res + "</th></tr>";
+				}
+				data += "</table>";
+				document.getElementById('display').innerHTML=data;
+			}
+			//show();
+		</script>
+	</head>
+	<body id="main" >
+		
+		<input type="number" id="no" required>
+		<input type="button" value="show table" onclick="show()">
+		<div id="display">
+		</div>
+		
+	</body>
+</html>

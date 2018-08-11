@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<script>
+			//document.write(confirm('are u sure'));
+			function show()
+			{
+				// document.getElementById('title').value =document.getElementById('name').innerHTML
+				var c=document.getElementById('clr').value;
+				//alert(c);
+				document.getElementById('main').style.background=c;
+			}
+			//show();
+		</script>
+	</head>
+	<body id="main" >
+		
+		<input type="color" id="clr" >
+		<input type="button" value="set" onclick="show()">
+		
+	</body>
+</html>

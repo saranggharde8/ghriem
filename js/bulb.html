@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<script>
+			function show(cmd)
+			{
+				if(cmd=="on")
+				{
+					document.getElementById('bulb').src='bulb2.jpg';
+					document.getElementById('btn').value="Off";
+				}
+				else{
+					document.getElementById('bulb').src='bulb.jpg';
+					document.getElementById('btn').value="on";
+				}
+				
+			}
+			//show('direct');
+		</script>
+	</head>
+	<body>
+		
+		<img src="bulb.jpg" id='bulb' height=300 width=150>
+		
+		<input id='btn' type="button" value="on" onclick="show(this.value);">
+		
+	</body>
+</html>
